@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">BelajarCoding</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="basic.html">Belajar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-container">
+      <h2>Masuk atau Daftar</h2>
+      <form action="#" method="post">
+        <label for="username">Nama Pengguna</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Kata Sandi</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit" class="btn">Masuk</button>
+        <p>Belum punya akun? <a href="register.html">Daftar</a></p>
+      </form>
+      <form action="#" method="POST" onsubmit="return validateLoginForm()">
+
+    </section>
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+

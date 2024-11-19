@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar - BelajarCoding</title>
+  <link rel="stylesheet" href="styley.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">BelajarCoding</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="auth-container">
+      <div class="auth-box">
+        <h2>Daftar Akun</h2>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="fullname">Nama Lengkap:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Masukkan nama lengkap" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Masukkan password" required>
+          </div>
+          <div class="form-group">
+            <label for="conf_password">Konfirmasi Password:</label>
+            <input type="password" id="conf_password" name="conf_password" placeholder="Konfirmasi password" required>
+          </div>
+          <button type="submit" class="btn">Daftar</button>
+        </form>
+        <p>Sudah punya akun? <a href="login.html">Login di sini</a></p>
+        <form action="#" method="POST" onsubmit="return validateRegisterForm()">
+
+      </div>
+    </section>
+  </main>
+
+><script src="java.js"></script>
+</body>
+</html>

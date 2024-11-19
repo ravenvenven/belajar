@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dasar Pemrograman</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Belajar coding</div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Beranda</a></li>
+        <li><a href="../login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Dasar Pemrograman</h1>
+
+    <!-- Bagian 1: Variabel -->
+    <section>
+      <h2>1. Apa Itu Variabel?</h2>
+      <p>Variabel adalah tempat untuk menyimpan data atau nilai. Nilai ini bisa berubah-ubah selama eksekusi program. Variabel memiliki nama yang unik dan tipe data tertentu.</p>
+
+      <h3>Contoh Variabel di JavaScript</h3>
+      <pre>
+let nama = "Ali";  // Tipe data String
+let umur = 25;     // Tipe data Number
+let tinggi = 1.75; // Tipe data Float
+let isMahasiswa = true; // Tipe data Boolean
+      </pre>
+      <p>Di atas, kita mendeklarasikan empat variabel dengan berbagai tipe data. Variabel <code>nama</code> adalah string, <code>umur</code> adalah angka, <code>tinggi</code> adalah float, dan <code>isMahasiswa</code> adalah boolean.</p>
+
+      <h3>Contoh Variabel di PHP</h3>
+      <pre>
+<php>
+$nama = "Ali";     // String
+$umur = 25;        // Integer
+$tinggi = 1.75;    // Float
+$isMahasiswa = true; // Boolean
+echo "Nama: " . $nama . ", Umur: " . $umur;
+      </php>
+      </pre>
+    </section>
+
+    <!-- Bagian 2: Tipe Data -->
+    <section>
+      <h2>2. Tipe Data</h2>
+      <p>Setiap variabel memiliki tipe data yang berbeda. Beberapa tipe data dasar yang sering digunakan dalam pemrograman adalah:</p>
+      <ul>
+        <li><strong>String</strong>: Data berupa teks (misalnya "Halo Dunia")</li>
+        <li><strong>Number</strong>: Data berupa angka (misalnya 10, 3.14)</li>
+        <li><strong>Boolean</strong>: Data berupa nilai <code>true</code> atau <code>false</code></li>
+        <li><strong>Array</strong>: Kumpulan beberapa nilai dalam satu variabel (misalnya [1, 2, 3])</li>
+        <li><strong>Object</strong>: Struktur data yang berisi pasangan key-value (misalnya <code>{name: "Ali", age: 25}</code>)</li>
+      </ul>
+
+      <h3>Contoh Tipe Data di JavaScript</h3>
+      <pre>
+let nama = "Ali";      // String
+let umur = 25;         // Number
+let tinggi = 1.75;     // Float
+let isMahasiswa = true; // Boolean
+let daftarAngka = [1, 2, 3, 4]; // Array
+let person = {name: "Ali", age: 25}; // Object
+      </pre>
+    </section>
+
+    <!-- Bagian 3: Logika Pemrograman -->
+    <section>
+      <h2>3. Logika Pemrograman (Pengkondisian)</h2>
+      <p>Logika dalam pemrograman digunakan untuk membuat keputusan. Struktur logika yang paling umum adalah <code>if</code>, <code>else</code>, dan <code>switch</code>.</p>
+
+      <h3>Contoh Penggunaan <code>if</code> dan <code>else</code> di JavaScript</h3>
+      <pre>
+let angka = 10;
+
+if (angka > 5) {
+  console.log("Angka lebih besar dari 5");
+} else {
+  console.log("Angka kurang dari atau sama dengan 5");
+}
+      </pre>
+
+      <h3>Contoh Penggunaan <code>if</code> dan <code>else</code> di PHP</h3>
+      <pre>
+<php>
+$angka = 10;
+
+if ($angka > 5) {
+    echo "Angka lebih besar dari 5";
+} else {
+    echo "Angka kurang dari atau sama dengan 5";
+}
+</php>
+      </pre>
+
+      <p>Selain itu, kita juga bisa menggunakan <code>switch</code> untuk menangani beberapa kondisi yang lebih kompleks.</p>
+
+      <h3>Contoh Penggunaan <code>switch</code> di JavaScript</h3>
+      <pre>
+let hari = "Senin";
+switch (hari) {
+  case "Senin":
+    console.log("Hari pertama minggu");
+    break;
+  case "Jumat":
+    console.log("Hari kerja terakhir");
+    break;
+  default:
+    console.log("Hari biasa");
+}
+      </pre>
+
+      <h3>Contoh Penggunaan <code>switch</code> di PHP</h3>
+      <pre>
+<php>
+$hari = "Senin";
+switch ($hari) {
+  case "Senin":
+    echo "Hari pertama minggu";
+    break;
+  case "Jumat":
+    echo "Hari kerja terakhir";
+    break;
+  default:
+    echo "Hari biasa";
+}
+</php>
+      </pre>
+    </section>
+
+    <!-- Bagian 4: Kuis Dasar Pemrograman -->
+    <section>
+      <h2>4. Kuis Dasar Pemrograman</h2>
+      <p>Cobalah menjawab pertanyaan berikut untuk menguji pemahaman Anda tentang variabel, tipe data, dan logika pemrograman:</p>
+      <ul>
+        <li>Apa perbedaan antara <code>let</code> dan <code>const</code> di JavaScript?</li>
+        <li>Jelaskan bagaimana cara kerja struktur <code>switch</code> dalam PHP!</li>
+        <li>Buatlah program yang mengecek apakah suatu angka adalah genap atau ganjil menggunakan <code>if</code> dan <code>else</code>.</li>
+      </ul>
+    </section>
+  </main>
+
+
+
+
+<!-- Bagian 1: Array -->
+<section>
+    <h2>1. Apa Itu Array?</h2>
+    <p>Array adalah struktur data yang menyimpan beberapa nilai dalam satu variabel. Setiap elemen dalam array dapat diakses menggunakan indeks yang dimulai dari angka 0.</p>
+
+    <h3>Contoh Penggunaan Array di JavaScript</h3>
+    <pre>
+let buah = ["Apel", "Pisang", "Mangga"];
+console.log(buah[0]); // Output: Apel
+console.log(buah[1]); // Output: Pisang
+console.log(buah[2]); // Output: Mangga
+    </pre>
+
+    <h3>Contoh Penggunaan Array di PHP</h3>
+    <pre>
+<php>
+$buah = array("Apel", "Pisang", "Mangga");
+echo $buah[0]; // Output: Apel
+echo $buah[1]; // Output: Pisang
+echo $buah[2]; // Output: Mangga
+</php>
+    </pre>
+  </section>
+
+  <!-- Bagian 2: Object -->
+  <section>
+    <h2>2. Apa Itu Object?</h2>
+    <p>Object adalah tipe data yang menyimpan data dalam bentuk pasangan key-value. Biasanya digunakan untuk menyimpan informasi yang lebih kompleks.</p>
+
+    <h3>Contoh Penggunaan Object di JavaScript</h3>
+    <pre>
+let orang = {
+nama: "Ali",
+umur: 25,
+pekerjaan: "Mahasiswa"
+};
+
+console.log(orang.nama); // Output: Ali
+console.log(orang.umur); // Output: 25
+console.log(orang.pekerjaan); // Output: Mahasiswa
+    </pre>
+
+    <h3>Contoh Penggunaan Object di PHP</h3>
+    <pre>
+<php>
+$orang = (object) [
+'nama' => 'Ali',
+'umur' => 25,
+'pekerjaan' => 'Mahasiswa'
+];
+echo $orang->nama; // Output: Ali
+echo $orang->umur; // Output: 25
+echo $orang->pekerjaan; // Output: Mahasiswa
+    </php>
+    </pre>
+  </section>
+
+  <!-- Bagian 3: Manipulasi String -->
+  <section>
+    <h2>3. Manipulasi String</h2>
+    <p>Manipulasi string adalah proses untuk mengubah, mencari, atau memanipulasi data yang bertipe string (teks). Beberapa fungsi umum untuk manipulasi string termasuk pencarian kata, pemotongan, dan penggabungan string.</p>
+
+    <h3>Contoh Manipulasi String di JavaScript</h3>
+    <pre>
+let kalimat = "Hello, Dunia!";
+console.log(kalimat.length); // Output: 14
+console.log(kalimat.toUpperCase()); // Output: HELLO, DUNIA!
+console.log(kalimat.substring(0, 5)); // Output: Hello
+    </pre>
+
+    <h3>Contoh Manipulasi String di PHP</h3>
+    <pre>
+<php>
+$kalimat = "Hello, Dunia!";
+echo strlen($kalimat); // Output: 14
+echo strtoupper($kalimat); // Output: HELLO, DUNIA!
+echo substr($kalimat, 0, 5); // Output: Hello
+</php>
+    </pre>
+  </section>
+
+  <!-- Bagian 4: Kuis Pemrograman Lanjutan -->
+  <section>
+    <h2>4. Kuis Pemrograman Lanjutan</h2>
+    <p>Cobalah menjawab pertanyaan berikut untuk menguji pemahaman Anda tentang Array, Object, dan Manipulasi String:</p>
+    <ul>
+      <li>Buatlah array yang berisi 5 nama buah dan tampilkan nama buah pertama!</li>
+      <li>Buatlah object untuk menyimpan data mahasiswa dengan nama, umur, dan jurusan. Tampilkan semua informasi mahasiswa tersebut!</li>
+      <li>Buatlah program yang memanipulasi string untuk mengganti semua huruf "a" menjadi "o" dalam kalimat tertentu!</li>
+    </ul>
+  </section>
+</main>
+
+
+
+
+    <!-- Bagian 1: Fungsi Tingkat Lanjut -->
+    <section>
+        <h2>1. Fungsi Tingkat Lanjut</h2>
+        <p>Fungsi tingkat lanjut mencakup konsep seperti fungsi rekursif, fungsi yang mengembalikan nilai, dan parameter default. Konsep-konsep ini memungkinkan kita untuk membuat fungsi yang lebih fleksibel dan efisien.</p>
+  
+        <h3>Contoh Fungsi Rekursif di JavaScript</h3>
+        <p>Fungsi rekursif adalah fungsi yang memanggil dirinya sendiri untuk memecahkan masalah yang lebih kecil. Contohnya adalah perhitungan faktorial.</p>
+        <pre>
+  function faktorial(n) {
+    if (n === 0) {
+      return 1;
+    }
+    return n * faktorial(n - 1);
+  }
+  
+  console.log(faktorial(5)); // Output: 120
+        </pre>
+  
+        <h3>Contoh Fungsi Rekursif di PHP</h3>
+        <pre>
+  <php>
+  function faktorial($n) {
+    if ($n === 0) {
+      return 1;
+    }
+    return $n * faktorial($n - 1);
+  }
+  
+  echo faktorial(5); // Output: 120
+  <php>
+        </pre>
+  
+        <h3>Fungsi dengan Parameter Default di JavaScript</h3>
+        <pre>
+  function greet(name = "Pengguna") {
+    console.log("Hello, " + name);
+  }
+  
+  greet();      // Output: Hello, Pengguna
+  greet("Ali"); // Output: Hello, Ali
+        </pre>
+  
+        <h3>Fungsi dengan Parameter Default di PHP</h3>
+        <pre>
+  <php>
+  function greet($name = "Pengguna") {
+    echo "Hello, " . $name;
+  }
+  
+  greet();      // Output: Hello, Pengguna
+  greet("Ali"); // Output: Hello, Ali
+</php>
+        </pre>
+      </section>
+  
+      <!-- Bagian 2: Penanganan Kesalahan (Error Handling) -->
+      <section>
+        <h2>2. Penanganan Kesalahan (Error Handling)</h2>
+        <p>Penanganan kesalahan penting untuk memastikan bahwa program dapat menangani error tanpa terhenti. Di JavaScript dan PHP, kita menggunakan mekanisme seperti try-catch untuk menangani error dengan aman.</p>
+  
+        <h3>Contoh Error Handling di JavaScript</h3>
+        <pre>
+  try {
+    let angka = 10;
+    if (angka > 5) {
+      throw "Angka terlalu besar!";
+    }
+  } catch (error) {
+    console.log("Terjadi kesalahan: " + error);
+  }
+        </pre>
+  
+        <h3>Contoh Error Handling di PHP</h3>
+        <pre>
+  <php>
+  try {
+    $angka = 10;
+    if ($angka > 5) {
+      throw new Exception("Angka terlalu besar!");
+    }
+  } catch (Exception $e) {
+    echo "Terjadi kesalahan: " . $e->getMessage();
+  }
+  /<php>
+        </pre>
+      </section>
+  
+      <!-- Bagian 3: Pemrograman Asinkron (Asynchronous Programming) -->
+      <section>
+        <h2>3. Pemrograman Asinkron</h2>
+        <p>Pemrograman asinkron memungkinkan kita untuk mengeksekusi kode secara non-blocking, yaitu kode dapat berjalan tanpa harus menunggu proses lainnya selesai. Hal ini sangat penting dalam aplikasi web modern yang memerlukan interaksi real-time dengan server atau basis data.</p>
+  
+        <h3>Contoh Asynchronous di JavaScript menggunakan setTimeout</h3>
+        <pre>
+  console.log("Mulai");
+  setTimeout(function() {
+    console.log("Selesai setelah 2 detik");
+  }, 2000);
+  console.log("Berjalan paralel");
+        </pre>
+  
+        <h3>Contoh Asynchronous di JavaScript menggunakan Fetch</h3>
+        <pre>
+  fetch('https://api.github.com/users/octocat')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.log("Terjadi kesalahan: " + error));
+        </pre>
+  
+        <h3>Contoh Asynchronous di PHP menggunakan sleep()</h3>
+        <pre>
+  <php>
+  echo "Mulai\n";
+  sleep(2); // Delay selama 2 detik
+  echo "Selesai setelah 2 detik\n";
+        </php>
+        </pre>
+      </section>
+  
+      <!-- Bagian 4: Kuis Pemrograman Lanjutan -->
+      <section>
+        <h2>4. Kuis Pemrograman Lanjutan</h2>
+        <p>Cobalah menjawab pertanyaan berikut untuk menguji pemahaman Anda tentang fungsi tingkat lanjut, penanganan kesalahan, dan pemrograman asinkron:</p>
+        <ul>
+          <li>Buatlah fungsi rekursif untuk menghitung pangkat (exponentiation) di JavaScript dan PHP!</li>
+          <li>Implementasikan penanganan kesalahan dengan try-catch untuk menangani kesalahan pembagian dengan 0 di JavaScript dan PHP!</li>
+          <li>Buatlah program yang menggunakan pemrograman asinkron untuk mengambil data dari API menggunakan fetch di JavaScript!</li>
+        </ul>
+      </section>
+    </main>
+
+
+
+
+</body>
+</html>

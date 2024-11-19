@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materi Pemrograman Menengah</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">BelajarCoding</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Materi Pemrograman Menengah</h1>
+
+    <!-- Bagian 1: Struktur Data Lanjut -->
+    <section>
+      <h2>1. Struktur Data Lanjut</h2>
+      <p>Struktur data tingkat lanjut memungkinkan kita untuk mengatur dan mengelola data dengan cara yang lebih efisien dan terstruktur. Di sini, kita akan mempelajari array multidimensi, stack, dan queue.</p>
+
+      <h3>Array Multidimensi di JavaScript</h3>
+      <pre>
+let matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+console.log(matrix[0][0]); // Output: 1
+console.log(matrix[1][2]); // Output: 6
+console.log(matrix[2][1]); // Output: 8
+      </pre>
+
+      <h3>Array Multidimensi di PHP</h3>
+      <pre>
+<php>
+$matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+echo $matrix[0][0]; // Output: 1
+echo $matrix[1][2]; // Output: 6
+echo $matrix[2][1]; // Output: 8
+</php>
+      </pre>
+
+      <h3>Stack di JavaScript (LIFO)</h3>
+      <pre>
+let stack = [];
+
+stack.push(10); // Stack: [10]
+stack.push(20); // Stack: [10, 20]
+stack.push(30); // Stack: [10, 20, 30]
+
+console.log(stack.pop()); // Output: 30, Stack: [10, 20]
+console.log(stack.pop()); // Output: 20, Stack: [10]
+console.log(stack.pop()); // Output: 10, Stack: []
+      </pre>
+
+      <h3>Queue di JavaScript (FIFO)</h3>
+      <pre>
+let queue = [];
+
+queue.push(10); // Queue: [10]
+queue.push(20); // Queue: [10, 20]
+queue.push(30); // Queue: [10, 20, 30]
+
+console.log(queue.shift()); // Output: 10, Queue: [20, 30]
+console.log(queue.shift()); // Output: 20, Queue: [30]
+console.log(queue.shift()); // Output: 30, Queue: []
+      </pre>
+    </section>
+
+    <!-- Bagian 2: Fungsi Lanjut -->
+    <section>
+      <h2>2. Fungsi Lanjut</h2>
+      <p>Fungsi tingkat lanjut mencakup konsep seperti rekursif, fungsi higher-order, dan parameter default. Fungsi ini meningkatkan fleksibilitas dan kekuatan kode kita.</p>
+
+      <h3>Fungsi Rekursif di JavaScript</h3>
+      <pre>
+function faktorial(n) {
+  if (n === 0) {
+    return 1;
+  }
+  return n * faktorial(n - 1);
+}
+
+console.log(faktorial(5)); // Output: 120
+      </pre>
+
+      <h3>Fungsi Rekursif di PHP</h3>
+      <pre>
+<php>
+function faktorial($n) {
+  if ($n === 0) {
+    return 1;
+  }
+  return $n * faktorial($n - 1);
+}
+
+echo faktorial(5); // Output: 120
+</php>
+      </pre>
+
+      <h3>Fungsi Higher-Order di JavaScript</h3>
+      <pre>
+function operate(a, b, callback) {
+  return callback(a, b);
+}
+
+function add(x, y) {
+  return x + y;
+}
+
+console.log(operate(5, 3, add)); // Output: 8
+      </pre>
+
+      <h3>Fungsi Higher-Order di PHP</h3>
+      <pre>
+<php>
+function operate($a, $b, $callback) {
+  return $callback($a, $b);
+}
+
+function add($x, $y) {
+  return $x + $y;
+}
+
+echo operate(5, 3, 'add'); // Output: 8
+</php>
+      </pre>
+
+      <h3>Fungsi dengan Parameter Default di JavaScript</h3>
+      <pre>
+function greet(name = "Pengguna") {
+  console.log("Hello, " + name);
+}
+
+greet();      // Output: Hello, Pengguna
+greet("Ali"); // Output: Hello, Ali
+      </pre>
+
+      <h3>Fungsi dengan Parameter Default di PHP</h3>
+      <pre>
+<php>
+function greet($name = "Pengguna") {
+  echo "Hello, " . $name;
+}
+
+greet();      // Output: Hello, Pengguna
+greet("Ali"); // Output: Hello, Ali
+</php>
+      </pre>
+    </section>
+
+    <!-- Bagian 3: Penanganan Kesalahan (Error Handling) -->
+    <section>
+      <h2>3. Penanganan Kesalahan (Error Handling)</h2>
+      <p>Penanganan kesalahan membantu program tetap berjalan meskipun ada error. Di JavaScript dan PHP, kita menggunakan mekanisme seperti `try-catch` untuk menangani kesalahan.</p>
+
+      <h3>Error Handling di JavaScript</h3>
+      <pre>
+try {
+  let angka = 10;
+  if (angka > 5) {
+    throw "Angka terlalu besar!";
+  }
+} catch (error) {
+  console.log("Terjadi kesalahan: " + error);
+}
+      </pre>
+
+      <h3>Error Handling di PHP</h3>
+      <pre>
+<php>
+  $angka = 10;{
+  if ($angka > 5) {
+    throw new Exception("Angka terlalu besar!");
+  }
+} catch (Exception $e) {
+  echo "Terjadi kesalahan: " . $e->getMessage();
+}
+</php>
+      </pre>
+    </section>
+
+    <!-- Bagian 4: Pemrograman Asinkron (Asynchronous Programming) -->
+    <section>
+      <h2>4. Pemrograman Asinkron</h2>
+      <p>Pemrograman asinkron memungkinkan kita untuk menjalankan kode tanpa menunggu kode lainnya selesai, membuat aplikasi lebih responsif dan efisien.</p>
+
+      <h3>Asynchronous di JavaScript menggunakan setTimeout</h3>
+      <pre>
+console.log("Mulai");
+setTimeout(function() {
+  console.log("Selesai setelah 2 detik");
+}, 2000);
+console.log("Berjalan paralel");
+      </pre>
+
+      <h3>Asynchronous di JavaScript menggunakan Fetch</h3>
+      <pre>
+fetch('https://api.github.com/users/octocat')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.log("Terjadi kesalahan: " + error));
+      </pre>
+
+      <h3>Asynchronous di PHP menggunakan sleep()</h3>
+      <pre>
+<php>
+echo "Mulai\n";
+sleep(2); // Delay selama 2 detik
+echo "Selesai setelah 2 detik\n";
+      </php>
+      </pre>
+    </section>
+
+    <!-- Bagian 5: Kuis Pemrograman Menengah -->
+    <section>
+      <h2>5. Kuis Pemrograman Menengah</h2>
+      <p>Cobalah menjawab beberapa soal berikut untuk menguji pemahaman Anda tentang konsep-konsep yang telah dipelajari.</p>
+      <ul>
+        <li>Buatlah fungsi rekursif untuk menghitung pangkat (exponentiation) di JavaScript dan PHP!</li>
+        <li>Implementasikan penanganan kesalahan dengan try-catch untuk menangani kesalahan pembagian dengan 0 di JavaScript dan PHP!</li>
+        <li>Buatlah program yang menggunakan pemrograman asinkron untuk mengambil data dari API menggunakan fetch di JavaScript!</li>
+      </ul>
+    </section>
+  </main>
+
+
+
+
+
+    <!-- Bagian 1: Struktur Data Lanjut -->
+    <section>
+      <h2>1. Struktur Data Lanjut</h2>
+      <p>Struktur data tingkat lanjut memungkinkan kita untuk mengatur dan mengelola data dengan cara yang lebih efisien dan terstruktur. Di sini, kita akan mempelajari array multidimensi, stack, dan queue.</p>
+
+      <h3>Array Multidimensi di JavaScript</h3>
+      <pre>
+let matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+console.log(matrix[0][0]); // Output: 1
+console.log(matrix[1][2]); // Output: 6
+console.log(matrix[2][1]); // Output: 8
+      </pre>
+
+      <h3>Array Multidimensi di PHP</h3>
+      <pre>
+<php>
+$matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+echo $matrix[0][0]; // Output: 1
+echo $matrix[1][2]; // Output: 6
+echo $matrix[2][1]; // Output: 8
+      </php>
+      </pre>
+
+      <h3>Stack di JavaScript (LIFO)</h3>
+      <pre>
+let stack = [];
+
+stack.push(10); // Stack: [10]
+stack.push(20); // Stack: [10, 20]
+stack.push(30); // Stack: [10, 20, 30]
+
+console.log(stack.pop()); // Output: 30, Stack: [10, 20]
+console.log(stack.pop()); // Output: 20, Stack: [10]
+console.log(stack.pop()); // Output: 10, Stack: []
+      </pre>
+
+      <h3>Queue di JavaScript (FIFO)</h3>
+      <pre>
+let queue = [];
+
+queue.push(10); // Queue: [10]
+queue.push(20); // Queue: [10, 20]
+queue.push(30); // Queue: [10, 20, 30]
+
+console.log(queue.shift()); // Output: 10, Queue: [20, 30]
+console.log(queue.shift()); // Output: 20, Queue: [30]
+console.log(queue.shift()); // Output: 30, Queue: []
+      </pre>
+    </section>
+
+    <!-- Bagian 2: Fungsi Lanjut -->
+    <section>
+      <h2>2. Fungsi Lanjut</h2>
+      <p>Fungsi tingkat lanjut mencakup konsep seperti rekursif, fungsi higher-order, dan parameter default. Fungsi ini meningkatkan fleksibilitas dan kekuatan kode kita.</p>
+
+      <h3>Fungsi Rekursif di JavaScript</h3>
+      <pre>
+function faktorial(n) {
+  if (n === 0) {
+    return 1;
+  }
+  return n * faktorial(n - 1);
+}
+
+console.log(faktorial(5)); // Output: 120
+      </pre>
+
+      <h3>Fungsi Rekursif di PHP</h3>
+      <pre>
+<php>
+function faktorial($n) {
+  if ($n === 0) {
+    return 1;
+  }
+  return $n * faktorial($n - 1);
+}
+
+echo faktorial(5); // Output: 120
+</php>
+      </pre>
+
+      <h3>Fungsi Higher-Order di JavaScript</h3>
+      <pre>
+function operate(a, b, callback) {
+  return callback(a, b);
+}
+
+function add(x, y) {
+  return x + y;
+}
+
+console.log(operate(5, 3, add)); // Output: 8
+      </pre>
+
+      <h3>Fungsi Higher-Order di PHP</h3>
+      <pre>
+<php>
+function operate($a, $b, $callback) {
+  return $callback($a, $b);
+}
+
+function add($x, $y) {
+  return $x + $y;
+}
+
+echo operate(5, 3, 'add'); // Output: 8
+</php>
+      </pre>
+
+      <h3>Fungsi dengan Parameter Default di JavaScript</h3>
+      <pre>
+function greet(name = "Pengguna") {
+  console.log("Hello, " + name);
+}
+
+greet();      // Output: Hello, Pengguna
+greet("Ali"); // Output: Hello, Ali
+      </pre>
+
+      <h3>Fungsi dengan Parameter Default di PHP</h3>
+      <pre>
+<php>
+function greet($name = "Pengguna") {
+  echo "Hello, " . $name;
+}
+
+greet();      // Output: Hello, Pengguna
+greet("Ali"); // Output: Hello, Ali
+</php>
+      </pre>
+    </section>
+
+    <!-- Bagian 3: Penanganan Kesalahan (Error Handling) -->
+    <section>
+      <h2>3. Penanganan Kesalahan (Error Handling)</h2>
+      <p>Penanganan kesalahan membantu program tetap berjalan meskipun ada error. Di JavaScript dan PHP, kita menggunakan mekanisme seperti `try-catch` untuk menangani kesalahan.</p>
+
+      <h3>Error Handling di JavaScript</h3>
+      <pre>
+try {
+  let angka = 10;
+  if (angka > 5) {
+    throw "Angka terlalu besar!";
+  }
+} catch (error) {
+  console.log("Terjadi kesalahan: " + error);
+}
+      </pre>
+
+      <h3>Error Handling di PHP</h3>
+      <pre>
+<php>
+try {
+  $angka = 10;
+  if ($angka > 5) {
+    throw new Exception("Angka terlalu besar!");
+  }
+} catch (Exception $e) {
+  echo "Terjadi kesalahan: " . $e->getMessage();
+}
+</php>
+      </pre>
+    </section>
+
+    <!-- Bagian 4: Pemrograman Asinkron (Asynchronous Programming) -->
+    <section>
+      <h2>4. Pemrograman Asinkron</h2>
+      <p>Pemrograman asinkron memungkinkan kita untuk menjalankan kode tanpa menunggu kode lainnya selesai, membuat aplikasi lebih responsif dan efisien.</p>
+
+      <h3>Asynchronous di JavaScript menggunakan setTimeout</h3>
+      <pre>
+console.log("Mulai");
+setTimeout(function() {
+  console.log("Selesai setelah 2 detik");
+}, 2000);
+console.log("Berjalan paralel");
+      </pre>
+
+      <h3>Asynchronous di JavaScript menggunakan Fetch</h3>
+      <pre>
+fetch('https://api.github.com/users/octocat')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.log("Terjadi kesalahan: " + error));
+      </pre>
+
+      <h3>Asynchronous di PHP menggunakan sleep()</h3>
+      <pre>
+<php>
+echo "Mulai\n";
+sleep(2); // Delay selama 2 detik
+echo "Selesai setelah 2 detik\n";
+</php>
+      </pre>
+    </section>
+
+    <!-- Bagian 5: Algoritma dan Kompleksitas Waktu -->
+    <section>
+      <h2>5. Algoritma dan Kompleksitas Waktu</h2>
+      <p>Algoritma adalah urutan langkah-langkah untuk menyelesaikan masalah, sementara kompleksitas waktu mengukur seberapa efisien suatu algoritma dalam hal waktu yang dibutuhkan berdasarkan ukuran input.</p>
+
+      <h3>Contoh Algoritma Pencarian Linier (Linear Search)</h3>
+      <pre>
+function linearSearch(arr, target) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === target) {
+      return i; // Mengembalikan index jika ditemukan
+    }
+  }
+  return -1; // Tidak ditemukan
+}
+
+console.log(linearSearch([5, 3, 8, 4, 2], 8)); // Output: 2
+      </pre>
+
+      <h3>Kompleksitas Waktu Pencarian Linier</h3>
+      <p>Kompleksitas waktu algoritma pencarian linier adalah O(n), yang berarti waktu eksekusi bertambah seiring dengan bertambahnya ukuran array.</p>
+    </section>
+
+    <!-- Bagian 6: Kuis Pemrograman Menengah -->
+    <section>
+      <h2>6. Kuis Pemrograman Menengah</h2>
+      <p>Cobalah menjawab pertanyaan berikut untuk menguji pemahaman Anda tentang struktur data lanjutan, fungsi, penanganan kesalahan, pemrograman asinkron, dan algoritma:</p>
+      <ul>
+        <li>Buat fungsi rekursif untuk menghitung pangkat (exponentiation) di JavaScript dan PHP!</li>
+        <li>Implementasikan pencarian linier (linear search) untuk menemukan elemen dalam array di JavaScript dan PHP!</li>
+        <li>Buatlah fungsi untuk melakukan pengecekan kesalahan pada input pengguna di JavaScript!</li>
+        <li>Uji pemrograman asinkron dengan mengambil data API dari GitHub menggunakan fetch di JavaScript!</li>
+      </ul>
+    </section>
+
+
+</body>
+</html>
